@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html data-theme="cyberpunk" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioPunk</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="overflow-x-hidden">
+    <div class="navbar z-50 fixed m-4 bg-yellow-500 bg-opacity-30">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-yellow-500 bg-opacity-30">
+              <li><a href="#">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Listen</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-3xl" href="./index.html">RadioPunk</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <a href="#music">
+                <i class="text-2xl fa-solid fa-compact-disc"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    <section>
+        <div class="hero min-h-screen">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="text-cyan-500">
+                <div class="indicator">
+                    <span class="indicator-item badge badge-primary">made funky</span> 
+                    <h1 class="mb-5 text-6xl bg-yellow-500 bg-opacity-30 p-4 font-bold uppercase">This is RadioPunk</h1>
+                </div>
+                <p class="m-8 text-2xl">
+                    An online music player with built-in ad-blocker (you need ublock-origin installed on your browser) that plays music from trending charts at your fingertips. Player of the future built today. Play your favourite songs right away from your browser.
+                </p>
+                <button class="btn btn-primary m-4 p-4 flex-col h-auto">
+                    <a href="#music" class="text-2xl">
+                        <p class="text-4xl text-black"><i class="fa-solid fa-compact-disc"></i></p>
+                    </a>
+                </button>
+            </div>
+        </div>
+          </div>
+        </section>
+        <section id="music">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="90%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E39Bo3XeEZuSB?utm_source=generator" width="90%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EppNexg4tU9az?utm_source=generator" width="90%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+        <footer class="footer-center">
+            <h1>Made with 💕 by Sahil Rana</h1>
+        </footer>
+</body>
+</html>
