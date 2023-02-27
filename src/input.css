@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 ::selection{
-    color: var(--accent);
-    background-color: var(--text);
+    color: #ff7598;
 }
 ::-webkit-scrollbar{
     width: 6px;

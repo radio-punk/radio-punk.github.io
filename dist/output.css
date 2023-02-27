@@ -1827,6 +1827,25 @@ html {
   content: attr(data-title);
 }
 
+.divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 1rem;
+  white-space: nowrap;
+}
+
+.divider:before,
+  .divider:after {
+  content: "";
+  flex-grow: 1;
+  height: 0.125rem;
+  width: 100%;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -2382,6 +2401,20 @@ html {
   }
 }
 
+.divider:before {
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+}
+
+.divider:after {
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+}
+
+.divider:not(:empty) {
+  gap: 1rem;
+}
+
 .drawer-toggle:focus-visible ~ .drawer-content .drawer-button.btn-primary {
   outline: 2px solid hsl(var(--p));
 }
@@ -2814,11 +2847,6 @@ html {
   height: auto;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2914,13 +2942,11 @@ html {
 }
 
 ::-moz-selection{
-  color: var(--accent);
-  background-color: var(--text);
+  color: #ff7598;
 }
 
 ::selection{
-  color: var(--accent);
-  background-color: var(--text);
+  color: #ff7598;
 }
 
 ::-webkit-scrollbar{
